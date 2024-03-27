@@ -5,8 +5,6 @@ library(ggplot2)
 g <- ggplot(mpg, aes(class))
 # Number of cars in each class:
 g + geom_bar()
-# Total engine displacement of each class
-g + geom_bar(aes(weight = displ))
 # Map class to y instead to flip the orientation
 ggplot(mpg) + geom_bar(aes(y = class))
 
